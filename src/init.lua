@@ -26,7 +26,7 @@ function Timer:Start()
 	end
 
 	self._Heartbeat = RunService.Heartbeat:Connect(function()
-		if tick()-startTime >= self.Duration or not self.IsRunning then
+		if tick() - startTime >= self.Duration or not self.IsRunning then
 			self._Heartbeat:Disconnect()
 
 			if self.IsRunning then

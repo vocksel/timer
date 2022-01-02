@@ -21,23 +21,23 @@ seconds.
 
 ## Properties
 
-**Duration: number (readonly)**
+**Timer.Duration: number (readonly)**
 
 The duration (in seconds) that the timer runs for. This is the value passed in
 when constructing.
 
-**IsRunning: boolean (readonly)**
+**Timer.IsRunning: boolean (readonly)**
 
 Simple flag to keep track of if the Timer is currently running or not.
 
-**IsLooped: boolean**
+**Timer.IsLooped: boolean**
 
 Sets whether the Timer will automatically start itself again after elapsing.
 This is the same as calling Start() each time Timeout is fired.
 
 ## Methods
 
-**Start()**
+**Timer:Start()**
 
 Starts the timer.
 
@@ -46,17 +46,17 @@ behavior is a bit weird, but allows you to do some neat tricks. For example, a
 cooldown mechanic, where a weapon will only go on cooldown once the user stops
 performing a chain of attacks.
 
-**Stop()**
+**Timer:Stop()**
 
 Stops the Timer, preventing Timeout from firing.
 
-**Destroy()**
+**Timer:Destroy()**
 
 Destroys the current timer and all of its instances.
 
 ## Events
 
-**Timeout**
+**Timer.Timeout**
 
 This event gets fired when the Timer elapses after being started with Start().
 No arguments are passed to it.

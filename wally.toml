@@ -1,6 +1,7 @@
 [package]
 name = "vocksel/timer"
-version = "0.1.0"
+description = "Timer class based off of Godot's Timer"
+version = "0.1.1"
 authors = [ "David Minnerly <me@vocksel.com>" ]
 license = "MIT"
 registry = "https://github.com/UpliftGames/wally-index"
